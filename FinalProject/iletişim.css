@@ -1,0 +1,30 @@
+.containerilt {
+    max-width: 700px;
+    height: 500px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    padding: 25px 30px;
+    border-radius: 5px;
+    margin-top: 2cm;
+    margin-left: 10cm;
+    margin-bottom: 5cm;
+    text-align: center;
+    
+}
+.containerilt .title {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.kulanıcı-detay .input-box {
+    height: 40px;
+    margin-bottom:30px;
+    padding: 10px;
+}
+.button {
+    padding: 10px 5px;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 65px;
+}

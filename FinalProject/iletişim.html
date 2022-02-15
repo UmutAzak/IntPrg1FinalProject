@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+<title>ConsHaber</title>
+<meta charset="UTF-8">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="iletişim.css">
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+<!--Metin kutusu bootstrap-->
+<script>
+  autosize($('textarea'));
+</script>
+</head>
+
+<body style="background-image: url(png/wlp1.jpg);";>
+  <div class="container1 ">   
+    <nav class="navbar navbar-expand-lg navbar-light col-lg-12  " style="background-color: #221d1d;  height:40px;  z-index: 1;  ;">
+      <div class="container-py-2 ">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="navbar-brand" href="#">ConsHaber</a>
+           <span class="navbar-toggler-icon"></span>
+        </button>
+          <div class="collapse navbar-collapse " id="navbarNav">
+            <ul class="navbar-nav ml-auto ">
+              <li class="nav-item px-5 ">
+                <a class="nav-link active" style="color:white;" aria-current="page" href="index.html">CONSHABER</a>
+              </li>
+              <li class="nav-item px-5">
+                <a class="nav-link blink" style="color:white;" href="index.html">Gündem</a>
+              </li>
+              <li class="nav-item px-5">
+                <a class="nav-link " style="color:white;" href="ekonomi.html">Ekonomi</a>
+              </li>
+              <li class="nav-item px-5">
+                <a class="nav-link" style="color:white;" href="spor.html">Spor</a>
+              </li>
+              <li class="nav-item px-5">
+                <a class="nav-link"  style="color:white;" href="magazin.html" >Magazin</a>
+              </li>
+              <li class="nav-item px-5">
+                <a class="nav-link" style="color:white;" href="teknoloji.html" >Teknoloji</a>
+              </li>
+              <li class="nav-item px-5">
+                <a class="nav-link" style="color:white;" href="iletişim.html" >İletişim</a>
+              </li>
+            </ul>
+          </div>             
+      </div>
+    </nav>
+  </div>         
+  <div class="containerilt">
+    <div class="title">İLETİŞİM</div>
+      <form >
+        <div class="kulanıcı-detay" >
+          <div class="input-box" style="padding: 1px;">
+            <label for="kadi" class="title" >Ad :</label><br>   
+            <input type="text" required id="kadi" placeholder="Adınızı Giriniz">
+          </div>
+          <div class="input-box" style="padding: 1px;">
+            <label for="ksoyad" class="title" >Soyad :</label><br>
+            <input type="text" id="ksoyad" required placeholder="Soyadınızı Giriniz">
+          </div>
+          <div class="input-box" style="padding: 1px;">
+            <label for="kmail" class="title" >E-mail Adresinizi Giriniz :</label><br>
+            <input type="email" required id="kmail" placeholder="conshaber@constr.com">
+          </div>
+          <div class="input-box" style="padding: 1px;">
+            <label for="kmsj" class="title">Mesajınız :</label><br>
+            <div class="textarea">
+              <textarea required id="kmsj"  rows="4" cols="40" placeholder="Mesajınız"></textarea>
+            </div>
+            </div>
+            <div class="button" style="padding: 2cm;">                
+            <input type="submit" value="Gönder">
+            </div>
+        </div>
+      </form>
+  </div> 
+  <div class="container1" >
+    <div class="col-md-1 m-auto">
+      <a href="https://www.linkedin.com/" target="_blank">
+      <img src="png/linkedinicon.svg"></a>
+      <a href="https://www.instagram.com/" target="_blank">
+      <img src="png/instaicon.svg"></a>
+      <a href="twitter.com" target="_blank">
+      <img src="png/twittericon.svg"></a>     
+    </div> 
+  </div>   
+  <div class="container1" >
+    <nav class="navbar navbar-expand-lg navbar-light col-lg-12  " style="background-color: #e0cece; margin-top: 2px;  ;">
+      <div class="col-md-4 m-auto">
+          <div class="col text-center ">
+            Copyright &copy 2022 ConsHaber -Tüm Hakları Saklıdır. Kaynak:Habertürk.com
+          </div> 
+      </div>    
+    </nav>
+  </div>   
+  <a href="#" class="icon" style="position:fixed; right: 10px; bottom: 70px;">
+    <img src="png/upicon1.webp" height="55px" width="55px">
+  </a>
+
+        
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

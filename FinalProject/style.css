@@ -1,0 +1,38 @@
+body{
+    background: rgb(204, 202, 202);
+    align-items: center;
+    place-content: center;
+    min-height: 5vh;
+    margin: 0;
+}
+.container{
+    padding: 10px;
+    border-radius: 5px;
+}
+.navbar-nav{
+    float:none;
+    margin-top: 5.5px;
+    font-size: larger;
+}
+
+.h6 {
+    text-align: center;
+    align-items: center;
+}
+.blink {
+    animation: blinker 0.9s linear infinite;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    }
+    @keyframes blinker {  
+    50% { opacity: 0; }
+    }
+
+.card-title{
+    color: red;
+}
+
+.carousel-caption  {
+    color: red;
+}

@@ -1,0 +1,234 @@
+  <!DOCTYPE html>
+  <html lang="tr">
+
+    <head>
+    <title>ConsHaber</title>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="iletişim.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    <!--Animasyon özelikleri-1-->
+    <style>
+      .toggler { width: 500px; height: 170px; position: relative; }
+      #effect { width: 240px; height: 170px; padding: 0.4em; position: relative; }
+      #effect h3 { margin: 0; padding: 0.4em; text-align: center; }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <!--Animasyon özelikleri-2-->
+    <script>
+    $( function() {
+      var state = true;
+      $( "#effect" ).ready(function() {
+        if ( state ) {
+          $( "#effect" ).animate({
+            backgroundColor: "#aa0000",
+            color: "#fff",
+            width: 350
+          }, 1000 );
+        } else {
+          $( "#effect" ).animate({
+            backgroundColor: "#fff",
+            color: "#ffff",
+            width: 240
+          }, 1000 );
+        }
+        state = !state;
+      });
+    } );
+    </script>
+    <!--Bildirim penceresi-->
+    <script>
+      $( function() {
+        $( "#dialog" ).dialog({
+          backgroundColor:"#red",
+          color:"fff",
+          width:300
+        });
+      } );
+      </script>
+      
+    </head>
+
+    <body style="background-image: url(png/wlp1.jpg);";>
+      <!--Üst Menü-->
+            <div class="container1 ">   
+              <nav class="navbar navbar-expand-lg navbar-light col-lg-12 " style=" z-index: 1; background-color: #701616; height:40px; ">
+                <div class="container-py-2 ">
+                    <button class="navbar-toggler"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <a class="navbar-brand" href="#">ConsHaber</a>
+                    <span class="navbar-toggler-icon" ></span>
+                    </button>
+                  <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav ml-auto ">
+                      <li class="nav-item px-5 " >
+                        <a class="nav-link active" style="color:white;" aria-current="page" href="#">CONSHABER</a>
+                      </li>
+                      <li class="nav-item px-5">
+                        <a  class="nav-link blink"  style="color:white;" href="index.html" > Gündem</a>
+                      </li>
+                      <li class="nav-item px-5">
+                        <a class="nav-link " style="color:white;" href="ekonomi.html">Ekonomi</a>
+                      </li>
+                      <li class="nav-item px-5">
+                        <a class="nav-link" style="color:white;" href="spor.html">Spor</a>
+                      </li>
+                      <li class="nav-item px-5">
+                        <a class="nav-link" style="color:white;" href="magazin.html" >Magazin</a>
+                      </li>
+                      <li class="nav-item px-5">
+                        <a class="nav-link" style="color:white;" href="teknoloji.html" >Teknoloji</a>
+                      </li>
+                      <li class="nav-item px-5">
+                        <a class="nav-link" style="color:white;" href="iletişim.html" >İletişim</a>
+                      </li>
+                    </ul>
+                   </div>
+                </div>
+              </nav>
+            </div> 
+            <!--Kayan Yazı-->  
+            <marquee behavior="alternate" bgColor="#828282" >Son dakika haberi Bakan Özer'den 15 bin öğretmen atamasıyla ilgili dikkat çeken açıklama Fenerbahçe'de yeni teknik direktör İsmail Kartal oldu! Manavgat'ta dere taştı, evlerini su basanlar botla kurtarıldı Pekin Kış Olimpiyatları'na hazır: Çin'in Covid politikası başarılı oldu mu?</marquee>      
+            <div class="container">
+              <div id="carouselExampleCaptions"  class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators " >
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <a href="#hb1">
+                  <img src="png/mghbr1.jpg" width="data-bs-ride" height="300px" class="d-block w-100"></a>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Seda Yıldız koronavirüse yakalandı</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <a href="#hb2">
+                  <img src="png/shbr2.jpg" width="d-md-block" height="300px" class="d-block w-100" ></a>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Fenerbahçe'de yeni teknik direktör İsmail Kartal oldu!</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <a href="#hb3">
+                  <img src="png/ehbr1.jpg" width="d-md-block" height="300px" class="d-block w-100" ></a>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>EPDK'dan elektrik faturalarına inceleme</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <a href="#hb4">
+                  <img src="png/sphbr4.jpg" width="d-md-block" height="300px" class="d-block w-100" ></a>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Beşiktaş'a üç futbolcudan iyi haber</h5>
+                  </div>
+                </div>
+              </div>
+              <!--Slider button-->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+            <!--Haberler-->
+            <div class="container">
+              <div class="card-group">
+                <div class="card">
+                  <img src="png/ehbr2.jpg" class="card-img-top" >
+                  <div class="card-body">
+                    <div class="toggler">
+                      <div id="effect" class="ui-widget-content ui-corner-all">
+                        <h5 class="card-title1">Moody's Fed'den bu yıl 3 faiz artırımı bekliyor</h5>
+                          <p class="card-text">TDaha önce Fed'den 2023'e kadar faiz artırımı beklemediğini açıklayan Moody's son yayımladığı raporda bu yıl 3 faiz artırımı öngördüğünü duyurdu</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="png/sphbr5.jpg" class="card-img-top" >
+                    <div class="card-body">
+                      <h5 class="card-title">Yılmaz Vural'dan Fenerbahçe paylaşımı: Elbet bir gün buluşacağız</h5>
+                        <p class="card-text">Fenerbahçe'nin teknik direktörlük için İsmail Kartal ile anlaşmasının ardından Yılmaz Vural da bir paylaşım yaptı. Tecrübeli çalıştırıcı "Elbet bir gün buluşacağız" ifadelerini kullandı</p>
+                    </div>
+                </div>
+                <div class="card">
+                  <img src="png/hbr.jpg" class="card-img-top" >
+                  <div class="card-body">
+                    <h5 class="card-title">Son dakika: 12 Ocak Çarşamba vaka sayısı kaç oldu? Koronavirüs tablosu AÇIKLANDI!</h5>
+                      <p class="card-text">Türkiye Koronavirüs vaka sayılarındaki artışı konuşuyor. Hava sıcaklıklarının hızla düşmesi ve insanların kapalı mekanlarda daha fazla vakit geçirmek zorunda kalması, Güney Afrika ülkelerinde tespit edilen Omicron varyantının da etkisiyle vaka sayılarının yükselmesine neden oldu. 12 Ocak Çarşamba koronavirüs tablosuna göre vaka sayıları 75 bin sınırını geçti. Sağlık Bakanı Fahrettin Koca, her akşam düzenli olarak güncel koronavirüs tablosunu açıklıyor. Bugünkü vaka sayısı kaç oldu? 12 Ocak Çarşamba koronavirüs tablosu açıklandı</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="card-group">
+                <div class="card">
+                  <img src="png/sphbr4.jpg" class="card-img-top" >
+                  <div class="card-body">
+                    <h5 class="card-title" id="hb4">Beşiktaş'a üç futbolcudan iyi haber</h5>
+                      <p class="card-text">Beşiktaş'a, hastalığı bulunan isimlerden iyi haber geldi. Siyah-beyazlılarda Miralem Pjanic, Oğuzhan Özyakup ve Rachid Ghezzal takıma döndü.</p> 
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="png/ehbr1.jpg" class="card-img-top" >
+                    <div class="card-body">
+                      <h5 class="card-title" id="hb3">EPDK'dan elektrik faturalarına inceleme</h5>
+                        <p class="card-text">Enerji Piyasası Düzenleme Kurumu (EPDK) Başkanı Yılmaz, 1 Ocak'tan itibaren geçerli olan elektrik tarifelerinin aralık faturalarına yansıtıldığı yönünde kuruma iletilen şikayetler üzerine aralık ayına ait faturaları mercek altına aldıklarını açıkladı.</p>
+                    </div>
+                </div>
+                <div class="card">
+                  <img src="png/mghbr1.jpg" class="card-img-top" >
+                    <div class="card-body">
+                      <h5 class="card-title" id="hb1">Seda Yıldız koronavirüse yakalandı</h5>
+                        <p class="card-text">Ünlü oyuncu Seda Yıldız'ın koronavirüs testi pozitif çıktı. Yıldız'ın, evinde karantinaya girip dinlendiği öğrenildi</p>
+                    </div>
+                </div>
+                <div class="card">
+                  <img src="png/shbr2.jpg" class="card-img-top" >
+                    <div class="card-body">
+                      <h5 class="card-title" id="hb2">Son dakika haberler | Fenerbahçe'de yeni teknik direktör İsmail Kartal oldu!</h5>
+                        <p class="card-text">Fenerbahçe'de son dakika gelişmesi... Sarı-lacivertli kulübü, sezonun geri kalanı için takımın başına Teknik Direktör İsmail Kartal'ın getirildiğini duyurdu. Yapılan açıklamada, "İsmail Kartal, Fenerbahçe’nin kendisine ihtiyacı olduğu her anda kayıtsız ve şartsız göreve hazır olduğunu ifade etmiş, kulübümüz sezonun geri kalan dönemi için İsmail Kartal ile anlaşma sağlamıştır" denildi</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!--Sosyel medya-->
+            <div class="container1" >
+              <div class="col-md-1 m-auto">
+                <a href="https://www.linkedin.com/" target="_blank" >
+                  <img src="png/linkedinicon.svg" ></a>
+                <a href="https://www.instagram.com/" target="_blank">
+                  <img src="png/instaicon.svg"></a>
+                <a href="twitter.com" target="_blank">
+                  <img src="png/twittericon.svg"></a>     
+              </div> 
+            </div> 
+            <!--Alt bilgi-->  
+            <div class="container1" >
+              <nav class="navbar navbar-expand-lg navbar-light col-lg-12  " style="background-color: #e0cece; margin-top: 2px;  ;">
+                <div class="col-md-4 m-auto">
+                  <div class="col text-center ">
+                    Copyright &copy 2022 ConsHaber -Tüm Hakları Saklıdır. Kaynak:Habertürk.com
+                  </div> 
+                </div>    
+              </nav>
+            </div>
+            <!--Yukarı Çık buttonu-->   
+            <a href="#" class="icon" style="position:fixed; right: 10px; bottom: 70px;">
+            <img src="png/upicon1.webp" height="55px" width="55px"></a>
+            <!--Bildirim-->
+            <div id="dialog" title="ConsHaber">
+              <p>Umut Azak </p>
+            </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+  </html>
